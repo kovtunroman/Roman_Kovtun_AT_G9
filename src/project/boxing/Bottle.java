@@ -6,6 +6,7 @@ import project.liquids.SparklingWater;
 public class Bottle {
     private double volume;
     private SparklingWater water;
+
     public Bottle(double volume) {
         this(volume, new SparklingWater());
     }
@@ -20,15 +21,23 @@ public class Bottle {
         return water;
     }
 
-    public void open() {
-        this.water.degas();
+    public void setWater(SparklingWater water) {
+        this.water = water;
     }
 
-    public void setBubbles(){
+    public void open() {
+        this.water.setOpened();
+    }
+
+    public void setBubbles() {
         Bubble[] bubbles = new Bubble[(int) (volume * 10000)];
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i] = new Bubble("CO2");
         }
         water.pump(bubbles);
+    }
+
+    public void warm(int temperature) {
+        water.setTemperature(temperature);
     }
 }
