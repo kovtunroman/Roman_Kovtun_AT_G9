@@ -15,6 +15,6 @@ public class ArraySortAndShow {
     }
 
     public void sortArayAndShow(int[] inputArray) {
-        new ArrayToConsoleTraining().showArrayElements(sortArrayElements(inputArray));
+        ArrayToConsoleTraining.showArrayElements(sortArrayElements(inputArray));
     }
 }

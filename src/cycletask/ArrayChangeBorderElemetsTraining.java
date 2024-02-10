@@ -9,6 +9,6 @@ public class ArrayChangeBorderElemetsTraining {
     }
 
     public void changeBorderArrayElemetsAndShow(int[] inputArray) {
-        new ArrayToConsoleTraining().showArrayElements(changeBorderArrayElemets(inputArray));
+        ArrayToConsoleTraining.showArrayElements(changeBorderArrayElemets(inputArray));
     }
 }

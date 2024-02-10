@@ -9,7 +9,7 @@ public class ArrayMultiplyElementsTraining {
     }
 
     public void multiplyArrayElemetsAndShow(int[] inputArray) {
-        new ArrayToConsoleTraining().showArrayElements(multiplyArrayElemets(inputArray));
+        ArrayToConsoleTraining.showArrayElements(multiplyArrayElemets(inputArray));
     }
 
 }

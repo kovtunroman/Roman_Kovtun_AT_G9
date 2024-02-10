@@ -9,6 +9,6 @@ public class ArrayPowTrining {
     }
 
     public void powArrayElemetsAndShow(int[] inputArray) {
-        new ArrayToConsoleTraining().showArrayElements(powArrayElemets(inputArray));
+        ArrayToConsoleTraining.showArrayElements(powArrayElemets(inputArray));
     }
 }
