@@ -8,7 +8,7 @@ public class Runner {
                 new Bottle(0.2)};
         for (Bottle bottle : bottles) {
             bottle.open();
-            bottle.getWater().getNumberOfBubbles();
+            bottle.getWater().showNumberOfBubbles();
         }
         bottles[0].open();
     }

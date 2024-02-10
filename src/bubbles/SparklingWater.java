@@ -1,11 +1,9 @@
 package bubbles;
 
-import basetask.Pineapple;
-
 public class SparklingWater extends Water {
     private Bubble[] bubbles;
 
-    public void getNumberOfBubbles() {
+    public void showNumberOfBubbles() {
         int counter = 0;
         for (int i = 0; i < bubbles.length; i++) {
             if (bubbles[i] != null) {
