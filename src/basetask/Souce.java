@@ -3,6 +3,7 @@ package basetask;
 public class Souce {
     private String name;
     private String color;
+
     public Souce(String name, String color) {
         this.color = color;
         this.name = name;
@@ -24,7 +25,7 @@ public class Souce {
         this.color = color;
     }
 
-    public void printSouceDetails(){
+    public void printSouceDetails() {
         System.out.println("Это соус " + this.name + " " + this.color + " цвета");
     }
 }

@@ -3,6 +3,7 @@ package basetask;
 public class Obstacle {
     private String description;
     private String severity;
+
     public Obstacle(String description, String severity) {
         this.severity = severity;
         this.description = description;
@@ -24,7 +25,7 @@ public class Obstacle {
         this.severity = severity;
     }
 
-    public void printObstacleDetails(){
+    public void printObstacleDetails() {
         System.out.println("Возникло " + this.severity + " препятствиие " + this.description);
     }
 }

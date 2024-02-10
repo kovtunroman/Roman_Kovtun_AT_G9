@@ -4,12 +4,12 @@ public class Bee {
     private String gender;
     private Long weight;
 
-    public Bee(String gender, Long weight){
+    public Bee(String gender, Long weight) {
         this.gender = gender;
         this.weight = weight;
     }
 
-    public String getGender(){
+    public String getGender() {
         return gender;
     }
 
@@ -25,7 +25,7 @@ public class Bee {
         this.weight = weight;
     }
 
-    public void printBeeDetails(){
-        System.out.println("Я легче лося в " + 500/weight + " раз");
+    public void printBeeDetails() {
+        System.out.println("Я легче лося в " + 500 / weight + " раз");
     }
 }
