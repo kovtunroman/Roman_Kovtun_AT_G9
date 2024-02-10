@@ -1,5 +1,8 @@
 package homework.day4;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 public class ArrayConsoleTraining {
     /*
      *   Метод, который принимает на вход целочисленном массив и считает сумму каждого n-ого элемента в нем,
@@ -56,5 +59,19 @@ public class ArrayConsoleTraining {
             resultArray[resultArray.length - i - 1] = inputArray[i];
         }
         return resultArray;
+    }
+
+    /*
+     *   Метод, который вернет сумму тех элементов целочисленного массива, которые кратны числу текущего месяца
+     *   (массив подается в сигнатуру метода)
+     */
+    public static int sumOfArrayElementsMultipleToCurrentMonthNumber(int[] inputIntArray) {
+        int sumOfArrayElements = 0;
+        for (int i = 0; i < inputIntArray.length; i++) {
+            if (inputIntArray[i] % LocalDate.now().getMonthValue() == 0) {
+                sumOfArrayElements += inputIntArray[i];
+            }
+        }
+        return sumOfArrayElements;
     }
 }
