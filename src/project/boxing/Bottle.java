@@ -1,5 +1,6 @@
 package project.boxing;
 
+import project.liquids.Bubble;
 import project.liquids.SparklingWater;
 
 public class Bottle {
@@ -12,7 +13,7 @@ public class Bottle {
     public Bottle(double volume, SparklingWater water) {
         this.volume = volume;
         this.water = water;
-        this.water.setBubbles(this.volume);
+        setBubbles();
     }
 
     public SparklingWater getWater() {
@@ -21,5 +22,13 @@ public class Bottle {
 
     public void open() {
         this.water.degas();
+    }
+
+    public void setBubbles(){
+        Bubble[] bubbles = new Bubble[(int) (volume * 10000)];
+        for (int i = 0; i < bubbles.length; i++) {
+            bubbles[i] = new Bubble("CO2");
+        }
+        water.pump(bubbles);
     }
 }
