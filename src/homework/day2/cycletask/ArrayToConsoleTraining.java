@@ -1,4 +1,4 @@
-package cycletask;
+package homework.day2.cycletask;
 
 public class ArrayToConsoleTraining {
     public static void showArrayElements(int[] inputArray) {

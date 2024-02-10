@@ -1,4 +1,6 @@
-package bubbles;
+package project.boxing;
+
+import project.liquids.SparklingWater;
 
 public class Bottle {
     private double volume;

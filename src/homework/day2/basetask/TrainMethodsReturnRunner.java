@@ -1,4 +1,4 @@
-package basetask;
+package homework.day2.basetask;
 
 public class TrainMethodsReturnRunner {
     public static void main(String[] args) {

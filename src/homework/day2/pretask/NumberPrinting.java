@@ -1,4 +1,4 @@
-package pretask;
+package homework.day2.pretask;
 
 public class NumberPrinting {
     public static void main(String[] args) {

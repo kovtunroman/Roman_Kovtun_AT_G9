@@ -1,4 +1,4 @@
-package basetask;
+package homework.day2.basetask;
 
 public class TrainMethodsReturn {
     public int returnNewInt(int inputNumber) {

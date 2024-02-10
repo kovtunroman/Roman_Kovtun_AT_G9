@@ -1,4 +1,4 @@
-package pretask;
+package homework.day2.pretask;
 
 public class SumExample {
     private int sum(int thisInt, int withThisInt) {

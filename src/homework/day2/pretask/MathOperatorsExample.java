@@ -1,4 +1,4 @@
-package pretask;
+package homework.day2.pretask;
 
 import java.util.Random;
 
