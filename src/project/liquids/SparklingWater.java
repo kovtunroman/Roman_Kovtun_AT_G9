@@ -15,7 +15,7 @@ public class SparklingWater extends Water {
                 counter++;
             }
         }
-        System.out.println(counter);
+        System.out.printf("Number of bubbles: %s", counter).println();
     }
 
     public void pump(Bubble[] bubbles) {
@@ -23,6 +23,7 @@ public class SparklingWater extends Water {
             bubbles[i] = new Bubble("CO2");
         }
         this.bubbles = bubbles;
+        System.out.println("Bubbles pumped");
     }
 
     public void degas() {
@@ -43,13 +44,16 @@ public class SparklingWater extends Water {
                 }
             }
         }
+        System.out.println("Sparkling Water was degased successfully");
     }
 
     private void isOpened() {
+        System.out.println("Water is opened");
     }
 
     public void setOpened() {
         isOpened = true;
         degas();
+        System.out.println("Sparkling Water was set to opened");
     }
 }

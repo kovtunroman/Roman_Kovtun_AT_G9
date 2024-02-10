@@ -18,14 +18,17 @@ public class Bottle {
     }
 
     public SparklingWater getWater() {
+        System.out.printf("Water in the bottle: %s", water).println();
         return water;
     }
 
     public void setWater(SparklingWater water) {
+        System.out.printf("Water in the bottle set to: %s", water).println();
         this.water = water;
     }
 
     public void open() {
+        System.out.println("Bottle was opened");
         this.water.setOpened();
     }
 
@@ -35,9 +38,11 @@ public class Bottle {
             bubbles[i] = new Bubble("CO2");
         }
         water.pump(bubbles);
+        System.out.printf("Bottle water bubbles were set. Number of bubbles: %s", bubbles.length).println();
     }
 
     public void warm(int temperature) {
+        System.out.printf("Warming water to: %s", temperature).println();
         water.setTemperature(temperature);
     }
 }
