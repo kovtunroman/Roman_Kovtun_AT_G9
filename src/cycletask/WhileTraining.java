@@ -1,9 +1,9 @@
 package cycletask;
 
 public class WhileTraining {
-    public void showNumbersFromZeroToTwenty(){
+    public void showNumbersFromZeroToTwenty() {
         int number = 1;
-        while (number < 21){
+        while (number < 21) {
             System.out.print(number + " ");
             number++;
         }
