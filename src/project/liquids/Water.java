@@ -1,9 +1,9 @@
-package bubbles;
+package project.liquids;
 
 public abstract class Water {
     private String color;
     private String transparency;
-    private String smell;
+    private String smell ;
     private String temperature;
 
     public String getColor() {

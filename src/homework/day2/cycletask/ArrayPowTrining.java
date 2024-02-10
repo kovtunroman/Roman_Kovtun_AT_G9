@@ -1,4 +1,4 @@
-package cycletask;
+package homework.day2.cycletask;
 
 public class ArrayPowTrining {
     private int[] powArrayElemets(int[] inputArray) {

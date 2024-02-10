@@ -1,4 +1,4 @@
-package bubbles;
+package project;
 
 import project.boxing.Bottle;
 

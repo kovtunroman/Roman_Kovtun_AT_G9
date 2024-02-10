@@ -1,4 +1,4 @@
-package cycletask;
+package homework.day2.cycletask;
 
 public class ReverseArrayToConsoleTraining {
     public void reverseShowArrayElements(int[] inputArray) {
