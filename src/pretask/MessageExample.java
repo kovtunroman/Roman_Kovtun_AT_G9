@@ -2,7 +2,7 @@ package pretask;
 
 public class MessageExample {
 
-    private void getMessage(String message){
+    private void getMessage(String message) {
         System.out.println(message);
     }
 

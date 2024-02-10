@@ -17,19 +17,19 @@ public class MathOperatorsExample {
 
     }
 
-    private int sum(int thisInt, int withThisInt){
+    private int sum(int thisInt, int withThisInt) {
         return thisInt + withThisInt;
     }
 
-    private int deduction(int thisInt, int withThisInt){
+    private int deduction(int thisInt, int withThisInt) {
         return thisInt - withThisInt;
     }
 
-    private int mult(int thisInt, int onThisInt){
+    private int mult(int thisInt, int onThisInt) {
         return thisInt * onThisInt;
     }
 
-    private int devide(int thisInt, int onThisInt){
+    private int devide(int thisInt, int onThisInt) {
         return thisInt / onThisInt;
     }
 }

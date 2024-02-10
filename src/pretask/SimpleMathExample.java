@@ -8,6 +8,6 @@ public class SimpleMathExample {
         int lengthOfRectangle = random.nextInt(10);
         int highOfRectangle = random.nextInt(10);
 
-        System.out.println("Rectangle Square is " + lengthOfRectangle*highOfRectangle);
+        System.out.println("Rectangle Square is " + lengthOfRectangle * highOfRectangle);
     }
 }
