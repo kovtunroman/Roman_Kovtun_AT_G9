@@ -11,7 +11,7 @@ public class HW {
         }
         System.out.print("initial array: ");
         for (int i : array) {
-            System.out.print(i + " " );
+            System.out.print(i + " ");
         }
         System.out.println();
         int sum = 0;
