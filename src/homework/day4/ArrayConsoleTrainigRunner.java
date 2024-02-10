@@ -12,6 +12,8 @@ public class ArrayConsoleTrainigRunner {
         System.out.println("ArrayConsoleTraining 1.2: ");
         System.out.println(Arrays.toString(ArrayConsoleTraining.reverseArrayWithElementsBiggerThenInThisArray(demoArray, demoIntDelimiter)));
         System.out.println("ArrayConsoleTraining 1.3: " + ArrayConsoleTraining.sumOfArrayElementsMultipleToCurrentMonthNumber(demoArray));
+        System.out.println("ArrayConsoleTraining 1.4: ");
+        ArrayConsoleTraining.printCow();
 
     }
 }

@@ -74,4 +74,20 @@ public class ArrayConsoleTraining {
         }
         return sumOfArrayElements;
     }
+
+    /*
+     * Написать метод, который "нарисует" в консоли
+     * 	  ^__^
+     *  (oo)\\_______
+     * (__)\ ) \/\  \
+     *      ||----w |\
+     *      ||     ||
+     */
+    public static void printCow() {
+        System.out.println("\t  ^__^\n" +
+                "\t  (oo)\\\\_______\n" +
+                "\t (__)\\ ) \\/\\  \\\n" +
+                "\t      ||----w |\\\n" +
+                "\t      ||     ||");
+    }
 }
