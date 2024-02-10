@@ -8,7 +8,7 @@ public class SparklingWater extends Water {
     public void getNumberOfBubbles() {
         int counter = 0;
         for (int i = 0; i < bubbles.length; i++) {
-            if(bubbles[i] != null){
+            if (bubbles[i] != null) {
                 counter++;
             }
         }
@@ -16,7 +16,7 @@ public class SparklingWater extends Water {
     }
 
     public void setBubbles(double volume) {
-        this.bubbles = new Bubble[(int)(volume*10000)];
+        this.bubbles = new Bubble[(int) (volume * 10000)];
         bubbles = pump(bubbles);
     }
 
@@ -30,7 +30,7 @@ public class SparklingWater extends Water {
     public void degas() {
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i].cramp();
-            System.out.println(" " +(i+1));
+            System.out.println(" " + (i + 1));
             bubbles[i] = null;
         }
     }
