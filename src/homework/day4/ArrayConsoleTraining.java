@@ -1,4 +1,4 @@
-package classwork.day4;
+package homework.day4;
 
 public class ArrayConsoleTraining {
     /*

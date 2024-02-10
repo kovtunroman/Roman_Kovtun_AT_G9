@@ -1,4 +1,6 @@
-package classwork.day4;
+package homework.day4;
+
+import homework.day4.ArrayConsoleTraining;
 
 import java.util.Arrays;
 
