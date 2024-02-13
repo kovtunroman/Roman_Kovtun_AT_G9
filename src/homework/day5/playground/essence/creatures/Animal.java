@@ -1,4 +1,6 @@
 package homework.day5.playground.essence.creatures;
 
-public class Animal {
+import homework.day5.playground.essence.Matter;
+
+public abstract class Animal extends Matter {
 }

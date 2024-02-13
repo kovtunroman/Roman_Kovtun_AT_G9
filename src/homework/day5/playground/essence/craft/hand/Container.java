@@ -1,4 +1,6 @@
 package homework.day5.playground.essence.craft.hand;
 
-public class Container {
+import homework.day5.playground.essence.Matter;
+
+public abstract class Container extends Matter {
 }
