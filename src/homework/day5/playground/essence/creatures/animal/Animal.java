@@ -6,6 +6,10 @@ import homework.day5.playground.essence.creatures.plant.Plant;
 public abstract class Animal extends Matter {
     protected String name;
 
+    public Animal(int weight, String name){
+        super(weight, weight);
+        this.name = name;
+    }
     public Animal(String name, int weight, int mass) {
         super(weight, mass);
         this.name = name;
