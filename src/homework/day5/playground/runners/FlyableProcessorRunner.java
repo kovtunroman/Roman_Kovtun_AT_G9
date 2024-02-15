@@ -46,5 +46,7 @@ public class FlyableProcessorRunner {
         flyableProcessor.runFlyable(aFly);
         Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito");
         flyableProcessor.runFlyable(aMosquito);
+        flyableProcessor.runFlyable(aMosquito, "nowere");
+        flyableProcessor.runFlyable(aMosquito, "everyware");
     }
 }
