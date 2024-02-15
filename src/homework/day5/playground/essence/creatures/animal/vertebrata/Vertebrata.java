@@ -1,7 +1,7 @@
-package homework.day5.playground.essence.creatures.animal;
+package homework.day5.playground.essence.creatures.animal.vertebrata;
 
 import homework.day5.playground.essence.creatures.animal.Animal;
-import homework.day5.playground.essence.creatures.insect.Insect;
+import homework.day5.playground.essence.creatures.animal.insect.Insect;
 
 public abstract class Vertebrata extends Animal {
     public Vertebrata(String name, int weight, int mass) {
