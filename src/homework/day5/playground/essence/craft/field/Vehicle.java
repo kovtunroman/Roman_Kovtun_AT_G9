@@ -31,4 +31,10 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
                 this.getName(), pointA, pointB).println();
         return Math.abs(pointB - pointA);
     }
+
+    @Override
+    public void drive(String direction) {
+        System.out.printf("\n I am %s, my name is %S and I amd driving to %S", this.getClass().getSimpleName(),
+                this.getName(), direction).println();
+    }
 }
