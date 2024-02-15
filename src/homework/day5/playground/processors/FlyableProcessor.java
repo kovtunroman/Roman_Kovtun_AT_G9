@@ -5,7 +5,7 @@ import homework.day5.playground.utils.DirectionGenerator;
 
 public class FlyableProcessor {
     public void runFlyable(Flyable flyable) {
-        flyable.fly(DirectionGenerator.generateDirection());
+        runFlyable(flyable, DirectionGenerator.generateDirection());
     }
 
     public void runFlyable(Flyable flyable, String direction){
