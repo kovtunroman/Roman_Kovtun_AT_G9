@@ -1,4 +1,4 @@
 package homework.day5.playground.essence.material;
 
-public class Water {
+public class Water implements Pourable {
 }

@@ -1,6 +1,7 @@
-package homework.day5.playground.essence.creatures;
+package homework.day5.playground.essence.creatures.animal;
 
 import homework.day5.playground.essence.Matter;
+import homework.day5.playground.essence.creatures.plant.Plant;
 
 public abstract class Animal extends Matter {
     protected String name;

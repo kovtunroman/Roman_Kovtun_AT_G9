@@ -1,4 +1,4 @@
 package homework.day5.playground.essence.creatures;
 
-public class Beetle {
+public interface Crawlable {
 }

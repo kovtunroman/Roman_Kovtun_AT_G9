@@ -1,4 +1,4 @@
-package homework.day5.playground.essence.creatures;
+package homework.day5.playground.essence.creatures.plant;
 
 import homework.day5.playground.essence.Matter;
 
