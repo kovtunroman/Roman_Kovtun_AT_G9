@@ -1,4 +1,7 @@
 package homework.day5.playground.essence.material;
 
-public class Water {
+import homework.day5.playground.essence.Pourable;
+import homework.day5.playground.essence.Powerable;
+
+public class Water implements Pourable {
 }
