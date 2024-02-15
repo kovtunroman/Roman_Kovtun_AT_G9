@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.creatures.animal.insect;
 
-import homework.day5.playground.essence.Crawlable;
+import homework.day5.playground.essence.creatures.Crawlable;
 import homework.day5.playground.essence.creatures.plant.vegetable.Carrot;
 
 public class Beetle extends Insect implements Crawlable {
