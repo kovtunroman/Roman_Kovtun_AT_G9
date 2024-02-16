@@ -14,5 +14,6 @@ public class StringStaticRunner {
                 "access_log.2020.09.07 212.168.122.6 denied\n");
         CurrentDatePrinter.printCurrentDate();
         DateTimeFormater.format("22.00 07.09.2020");
+        NewDate.calculateNewDate("aaa f");
     }
 }
