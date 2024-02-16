@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StringDuplicateFinder {
-    public static void process(String inputString) {
+    public static void processViaRegex(String inputString) {
         Pattern pattern = Pattern.compile("(\\s)");
         String[] stringsArray = pattern.split(inputString);
         String[] processingArray = new String[stringsArray.length];
@@ -39,5 +39,21 @@ public class StringDuplicateFinder {
             }
         }
         return counter;
+    }
+
+    public static void processViaStringBuilder(String inputString) {
+        Pattern pattern = Pattern.compile("\\b\\w+\\b");
+        Matcher matcher = pattern.matcher(inputString);
+        String resultString = "";
+        while (matcher.find()) {
+            if (resultString.contains(matcher.group()) && inputString.contains(matcher.group())) {
+                break;
+            }
+            if (!resultString.contains(matcher.group())) {
+                resultString = resultString + " " + matcher.group();
+            }
+
+        }
+        System.out.println(resultString);
     }
 }
