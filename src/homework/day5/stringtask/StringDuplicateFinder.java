@@ -41,7 +41,7 @@ public class StringDuplicateFinder {
         return counter;
     }
 
-    public static void processViaStringBuilder(String inputString) {
+    public static void processViaString(String inputString) {
         Pattern pattern = Pattern.compile("\\b\\w+\\b");
         Matcher matcher = pattern.matcher(inputString);
         String resultString = "";
