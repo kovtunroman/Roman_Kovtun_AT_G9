@@ -10,5 +10,6 @@ public class StringObjectRunner {
                 "access_log.2020.09.07 212.168.101.6 denied\n" +
                 "access_log.2020.09.07 212.168.101.6 denied\n" +
                 "access_log.2020.09.07 212.168.122.6 denied\n");
+        new CurrentDatePrinter().printCurrentDate();
     }
 }
