@@ -88,6 +88,7 @@ public class ArrayConsoleTraining {
                 "\t  (oo)\\\\_______\n" +
                 "\t (__)\\ ) \\/\\  \\\n" +
                 "\t      ||----w |\\\n" +
-                "\t      ||     ||");
+                "\t      ||     ||" +
+                "");
     }
 }

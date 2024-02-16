@@ -9,14 +9,17 @@ public class Bubble {
     }
 
     public double getVolume() {
+        System.out.printf("Bubble volume: %s", volume).println();
         return volume;
     }
 
     public String getGasComposition() {
+        System.out.printf("Bubble gas composition: %s", gasComposition).println();
         return gasComposition;
     }
 
     public void setGasComposition(String gasComposition) {
+        System.out.printf("Bubble gas composition set to: %s", gasComposition).println();
         this.gasComposition = gasComposition;
     }
 
