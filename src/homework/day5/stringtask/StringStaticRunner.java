@@ -5,5 +5,6 @@ public class StringStaticRunner {
         StringToCharColumn.process("123seafsa wef123 123seafsa");
         StringDuplicateFinder.processViaRegex("Mama Mila Mama Mila Ramu Mama");
         StringDuplicateFinder.processViaStringBuilder("Mama Mila Mama Mila Ramu Mama Doma");
+        NumbersFinder.findNumbersAndPrint("Mama MilA 123 3213 Ramu");
     }
 }
