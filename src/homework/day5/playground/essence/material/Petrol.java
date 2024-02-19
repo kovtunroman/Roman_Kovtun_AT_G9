@@ -1,4 +1,9 @@
 package homework.day5.playground.essence.material;
 
-public class Petrol implements Pourable, Powerable {
+import homework.day5.playground.essence.Matter;
+
+public class Petrol extends Matter implements Pourable, Powerable {
+    public Petrol(int mass) {
+        super(mass);
+    }
 }

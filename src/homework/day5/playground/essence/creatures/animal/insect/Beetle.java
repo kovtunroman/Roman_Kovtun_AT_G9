@@ -4,6 +4,10 @@ import homework.day5.playground.essence.creatures.Crawlable;
 import homework.day5.playground.essence.creatures.plant.vegetable.Carrot;
 
 public class Beetle extends Insect implements Crawlable {
+    public Beetle(int mass, String name) {
+        super(mass, name);
+    }
+
     public Beetle(String name, int weight, int mass) {
         super(name, weight, mass);
     }

@@ -9,6 +9,10 @@ public abstract class Matter {
         this.mass = mass;
     }
 
+    public Matter(int mass) {
+        this.mass = mass;
+    }
+
     public int getWeight() {
         return weight;
     }
