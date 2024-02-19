@@ -47,7 +47,7 @@ public class StringDuplicateFinder {
         String resultString = "";
         while (matcher.find()) {
             if (resultString.contains(matcher.group()) && inputString.contains(matcher.group())) {
-                break;
+                continue;
             }
             if (!resultString.contains(matcher.group())) {
                 resultString = resultString + " " + matcher.group();

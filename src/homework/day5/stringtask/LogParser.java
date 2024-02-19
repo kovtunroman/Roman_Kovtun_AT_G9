@@ -9,9 +9,9 @@ public class LogParser {
         String[] stringsWithIPArray = pattern.split(inputString);
         pattern = Pattern.compile("\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b");
         Matcher matcher = pattern.matcher(inputString);
-        String uniqIPs = findUniqIP(inputString);
+        String uniqIPWithDuplicate = findUniqIPWithDuplicate(inputString);
         while (matcher.find()) {
-            if (uniqIPs.contains(matcher.group())) {
+            if (uniqIPWithDuplicate.contains(matcher.group())) {
                 int counterGranted = 0;
                 int counterDenied = 0;
                 for (String stringWithIP : stringsWithIPArray) {
@@ -23,12 +23,12 @@ public class LogParser {
                     }
                 }
                 System.out.printf("ip %s: ok - %s, failed - %s", matcher.group(), counterGranted, counterDenied).println();
-                uniqIPs = uniqIPs.replaceAll(matcher.group(), "");
+                uniqIPWithDuplicate = uniqIPWithDuplicate.replaceAll(matcher.group(), "");
             }
         }
     }
 
-    private static String findUniqIP(String inputString) {
+    private static String findUniqIPWithDuplicate(String inputString) {
         Pattern pattern = Pattern.compile("\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b");
         Matcher matcher = pattern.matcher(inputString);
         String resultString = "";
