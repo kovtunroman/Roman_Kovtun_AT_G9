@@ -8,7 +8,7 @@ public class EssenseFileWriter {
     public void objectWriteToFile() {
         try (FileOutputStream fos = new FileOutputStream("object.txt");
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
-            oos.writeObject(new Copter(3000, "AH-1G").toString());
+            oos.writeObject(new Copter(3000, "AH-1G"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

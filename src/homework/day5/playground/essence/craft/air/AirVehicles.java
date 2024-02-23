@@ -4,7 +4,9 @@ import homework.day5.playground.essence.Flyable;
 import homework.day5.playground.essence.Matter;
 import homework.day5.playground.essence.craft.Transportable;
 
-public abstract class AirVehicles extends Matter implements Flyable, Transportable {
+import java.io.Serializable;
+
+public abstract class AirVehicles extends Matter implements Flyable, Transportable, Serializable {
     protected String name;
 
     public AirVehicles(int weight, String name) {
