@@ -3,7 +3,7 @@ package homework.day7;
 import java.io.*;
 
 public class ReadWriterWithoutVowels {
-    public void readFromFile() {
+    public void readFromFileDeleteVowelsWriteToFile() {
         try {
             BufferedReader in = new BufferedReader(new FileReader("output.txt"));
             String line;
@@ -16,14 +16,12 @@ public class ReadWriterWithoutVowels {
             BufferedWriter out = new BufferedWriter(new FileWriter("output.txt"));
             out.write(resultString);
             out.close();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
     public static void main(String[] args) {
-        new ReadWriterWithoutVowels().readFromFile();
+        new ReadWriterWithoutVowels().readFromFileDeleteVowelsWriteToFile();
     }
 }
