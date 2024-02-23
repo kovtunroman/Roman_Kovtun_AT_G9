@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ReadFromConsoleWriteToFile {
+public class ReaderFromConsoleWriteToFile {
     public void readFromConsoleWriteToFile() {
         Scanner scanner = new Scanner(System.in);
         try {
@@ -18,6 +18,6 @@ public class ReadFromConsoleWriteToFile {
     }
 
     public static void main(String[] args) {
-        new ReadFromConsoleWriteToFile().readFromConsoleWriteToFile();
+        new ReaderFromConsoleWriteToFile().readFromConsoleWriteToFile();
     }
 }
