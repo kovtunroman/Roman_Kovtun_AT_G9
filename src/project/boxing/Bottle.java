@@ -1,15 +1,16 @@
 package project.boxing;
 
+import project.Transformable;
 import project.liquids.Bubble;
 import project.liquids.SparklingWater;
 import project.liquids.Water;
+import project.material.Material;
 
-public class Bottle {
-    private double volume;
+public class Bottle extends Vessel implements Containable {
     private Water water;
 
-    public Bottle(double volume) {
-        this.volume = volume;
+    public Bottle(double volume, double diameter, Material material) {
+        super(volume, diameter, material);
     }
 
     public Water getWater() {
@@ -29,8 +30,8 @@ public class Bottle {
         }
     }
 
-    public void setBubbles() {
-        Bubble[] bubbles = new Bubble[(int) (volume * 10000)];
+    private void setBubbles() {
+        Bubble[] bubbles = new Bubble[(int) (getVolume() * 10000)];
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i] = new Bubble("CO2");
         }
@@ -43,5 +44,31 @@ public class Bottle {
     public void warm(int temperature) {
         System.out.printf("Warming water to: %s", temperature).println();
         water.setTemperature(temperature);
+    }
+
+    @Override
+    public void addStuff(Transformable stuff) {
+        if (stuff instanceof SparklingWater){
+            setBubbles();
+        }
+        System.out.printf("Adding %s into Bottle", stuff.getClass().getSimpleName()).println();
+    }
+
+    @Override
+    public Transformable removeStaff() {
+        System.out.printf("Removing %s from Bottle", stuff.getClass().getSimpleName()).println();
+        this.stuff = null;
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        if (stuff == null) {
+            System.out.printf("Bottle is Empty").println();
+            return true;
+        } else {
+            System.out.printf("Bottle is NOT Empty").println();
+            return false;
+        }
     }
 }
