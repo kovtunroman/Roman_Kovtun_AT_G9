@@ -1,12 +1,18 @@
 package project.liquids;
 
-public abstract class Water {
+import project.Transformable;
+
+public abstract class Water implements Transformable {
     private String color = "no";
     private String transparency = "transparent";
     private String smell = "no";
     private int temperature = 0;
 
-    public Water() {
+    public Water(String color, String smell, String transperency, int temperature) {
+        this.color = color;
+        this.transparency = transparency;
+        this.smell = smell;
+        this.temperature = temperature;
     }
 
     public String getColor() {

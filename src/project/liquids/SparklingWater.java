@@ -4,7 +4,8 @@ public class SparklingWater extends Water {
     private Bubble[] bubbles;
     private boolean isOpened;
 
-    public SparklingWater() {
+    public SparklingWater(String color, String smell, String transperency, int temperature) {
+        super(color, smell, transperency, temperature);
         isOpened();
     }
 
