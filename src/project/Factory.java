@@ -18,6 +18,7 @@ public class Factory {
             if (bottle.getWater() instanceof SparklingWater) {
                 ((SparklingWater) bottle.getWater()).showNumberOfBubbles();
             }
+            bottle.removeStaff();
         }
     }
 
