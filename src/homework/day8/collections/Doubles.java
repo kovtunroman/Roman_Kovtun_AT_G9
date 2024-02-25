@@ -1,19 +1,19 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static homework.day8.util.Printer.printListThroughSpaceForEach;
 
 public class Doubles {
     public static void main(String[] args) {
         List<Double> doubles = Arrays.asList(33.42, 34.3, 0.79, 2.3426, 6.8, 13.24, 5.5, 769.9);
-        Printer.printListThroughSpaceForEach(doubles);
+        Printer.printListForEachThrough(doubles, PrinterSymbol.SPACE);
         System.out.println(multiply(doubles));
         System.out.println(calculateSumOfDecimalParts(doubles));
-        Printer.printListThroughSpaceIterateByIndex(doubles);
+        Printer.printListIterateByIndexThrough(doubles, PrinterSymbol.SPACE);
     }
 
     private static double multiply(List<Double> inputDoubles) {

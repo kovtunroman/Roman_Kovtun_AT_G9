@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,12 +11,12 @@ public class Numbers {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(3342, 34, 79, 23426, 68, 1324, 55, 7699);
 
-        Printer.printListThroughNewLineForEach(numbers);
+        Printer.printListForEachThrough(numbers, PrinterSymbol.NEW_LINE);
         System.out.println(sumOfElements(numbers));
         Collections.sort(numbers);
-        Printer.printListThroughSpaceIterateByIndex(numbers);
+        Printer.printListIterateByIndexThrough(numbers, PrinterSymbol.SPACE);
         Collections.reverse(numbers);
-        Printer.printListThroughSpaceForEach(numbers);
+        Printer.printListForEachThrough(numbers, PrinterSymbol.SPACE);
     }
 
     private static int sumOfElements(List<Integer> inputNumbers) {

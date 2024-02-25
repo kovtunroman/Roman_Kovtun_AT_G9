@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,7 +15,7 @@ public class Birds {
         printBird(birds);
         calculateNumberOfBirdsWithMoreThanOneVowel(birds);
         birds.set(3, "Tit");
-        Printer.printListThroughSpaceForEach(birds);
+        Printer.printListForEachThrough(birds, PrinterSymbol.SPACE);
     }
 
     private static void printBird(List<String> inputBirds) {

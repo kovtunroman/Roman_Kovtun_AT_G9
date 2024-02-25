@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +18,13 @@ public class Elements {
         elements.add("Picker");
         elements.add("Breadcrumb");
 
-        Printer.printListThroughSpaceForEach(elements);
+        Printer.printListForEachThrough(elements, PrinterSymbol.SPACE);
         calculateNumberOfElementsWithMoreThanOneWord(elements);
-        Printer.printListThroughSpaceIterateByIndex(elements);
+        Printer.printListIterateByIndexThrough(elements, PrinterSymbol.SPACE);
         elements.add(4, "Spinner");
         elements.remove(2);
         elements.set(5, "Switch");
-        Printer.printListThroughSpaceForEach(elements);
+        Printer.printListForEachThrough(elements, PrinterSymbol.SPACE);
     }
 
     private static int calculateNumberOfWords(String word) {

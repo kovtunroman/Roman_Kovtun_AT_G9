@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class Cars {
 
         printCarsrToFile(cars);
         cars = findAndDeleteCarsWIthLengthMoreThenFour(cars);
-        Printer.printListThroughSpaceIterateByIndex(cars);
+        Printer.printListIterateByIndexThrough(cars, PrinterSymbol.SPACE);
     }
 
     private static void printCarsrToFile(List<String> inputCars) {

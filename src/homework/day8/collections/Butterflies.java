@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +15,8 @@ public class Butterflies {
         butterflies.add("Common blue");
         printButterflies(butterflies);
         calculateAndPrintButterfliesWithO(butterflies);
-        Printer.printListThroughSpaceIterateByIndex(butterflies);
-        Printer.printListThroughNewLineForEach(butterflies);
+        Printer.printListIterateByIndexThrough(butterflies, PrinterSymbol.SPACE);
+        Printer.printListIterateByIndexThrough(butterflies, PrinterSymbol.NEW_LINE);
     }
 
     private static void printButterflies(List<String> inputButterflies) {

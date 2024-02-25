@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.*;
 
@@ -9,9 +10,9 @@ public class Figures {
         List<String> figures = Arrays.asList("Oval", "Rectangle", "Circle", "Square", "Ellipse");
         printFiguresThroughDash(figures);
         calculateAndPrintNumberOfFiguresWithoutN(figures);
-        Printer.printListThroughSpaceIterateByIndex(figures);
+        Printer.printListIterateByIndexThrough(figures, PrinterSymbol.SPACE);
         figures = insertTriangle(figures);
-        Printer.printListThroughSpaceForEach(figures);
+        Printer.printListForEachThrough(figures, PrinterSymbol.SPACE);
     }
 
     private static void printFiguresThroughDash(List<String> inputFigures) {

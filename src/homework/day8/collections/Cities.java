@@ -1,6 +1,7 @@
 package homework.day8.collections;
 
 import homework.day8.util.Printer;
+import homework.day8.util.PrinterSymbol;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,9 +13,9 @@ public class Cities {
         cities.add("Moscow");
         cities.add("Berlin");
 
-        Printer.printListThroughNewLineForEach(cities);
+        Printer.printListIterateByIndexThrough(cities, PrinterSymbol.NEW_LINE);
         calculateAndPrintNUmberOfAllChars(cities);
-        Printer.printListThroughSpaceIterateByIndex(cities);
+        Printer.printListIterateByIndexThrough(cities, PrinterSymbol.SPACE);
     }
 
     private static void calculateAndPrintNUmberOfAllChars(List<String> inputCities) {
