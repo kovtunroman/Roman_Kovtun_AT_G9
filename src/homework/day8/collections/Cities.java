@@ -1,10 +1,11 @@
 package homework.day8.collections;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Cities {
     public static void main(String[] args) {
-        ArrayList<String> cities = new ArrayList<>();
+        List<String> cities = new ArrayList<>();
         cities.add("Minsk");
         cities.add("Moscow");
         cities.add("Berlin");
@@ -14,13 +15,13 @@ public class Cities {
         printCitiesThroughSpaceIterateByIndex(cities);
     }
 
-    private static void printCities(ArrayList<String> inputCities) {
+    private static void printCities(List<String> inputCities) {
         for (String butterflie : inputCities) {
             System.out.println(butterflie);
         }
     }
 
-    private static void calculateAndPrintNUmberOfAllChars(ArrayList<String> inputCities) {
+    private static void calculateAndPrintNUmberOfAllChars(List<String> inputCities) {
         int counter = 0;
         for (String city : inputCities) {
             counter += city.length();
@@ -28,7 +29,7 @@ public class Cities {
         System.out.printf("Number of all chars in cities is %s", counter).println();
     }
 
-    private static void printCitiesThroughSpaceIterateByIndex(ArrayList<String> inputCities) {
+    private static void printCitiesThroughSpaceIterateByIndex(List<String> inputCities) {
         for (int i = 0; i < inputCities.size(); i++) {
             if (i == inputCities.size() - 1) {
                 System.out.print(inputCities.get(i));
