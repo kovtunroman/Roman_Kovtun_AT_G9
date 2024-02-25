@@ -25,8 +25,8 @@ public class Elements {
     }
 
     private static void printElementsThroughSpace(List<String> inputElements) {
-        for (String butterflie : inputElements) {
-            System.out.printf("%s ", butterflie);
+        for (String element : inputElements) {
+            System.out.printf("%s ", element);
         }
         System.out.println();
     }

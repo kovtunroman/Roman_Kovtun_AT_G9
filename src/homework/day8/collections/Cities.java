@@ -16,8 +16,8 @@ public class Cities {
     }
 
     private static void printCities(List<String> inputCities) {
-        for (String butterflie : inputCities) {
-            System.out.println(butterflie);
+        for (String city : inputCities) {
+            System.out.println(city);
         }
     }
 

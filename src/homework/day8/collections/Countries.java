@@ -19,11 +19,11 @@ public class Countries {
     }
 
     private static void printCountries(List<String> inputCountries) {
-        for (String figure : inputCountries) {
-            if (inputCountries.indexOf(figure) == inputCountries.size() - 1) {
-                System.out.print(figure);
+        for (String country : inputCountries) {
+            if (inputCountries.indexOf(country) == inputCountries.size() - 1) {
+                System.out.print(country);
             } else {
-                System.out.print(figure + ", ");
+                System.out.print(country + ", ");
             }
         }
         System.out.println();

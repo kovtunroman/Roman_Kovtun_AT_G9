@@ -16,8 +16,8 @@ public class Birds {
     }
 
     private static void printBird(List<String> inputBirds) {
-        for (String butterflie : inputBirds) {
-            System.out.printf("--%s--", butterflie).println();
+        for (String bird : inputBirds) {
+            System.out.printf("--%s--", bird).println();
         }
     }
 
@@ -47,8 +47,8 @@ public class Birds {
     }
 
     private static void printBirdThroughSpace(List<String> inputBirds) {
-        for (String butterflie : inputBirds) {
-            System.out.printf("%s ", butterflie);
+        for (String bird : inputBirds) {
+            System.out.printf("%s ", bird);
         }
         System.out.println();
     }
