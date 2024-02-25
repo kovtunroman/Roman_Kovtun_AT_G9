@@ -13,12 +13,12 @@ public class FileCharacterNumberWriter {
         try {
             in = new BufferedReader(new FileReader("output.txt"));
             String line;
-            int counterCars = 0;
+            int counterChars = 0;
             while ((line = in.readLine()) != null) {
-                counterCars += line.length();
+                counterChars += line.length();
             }
-            out = new BufferedWriter(new FileWriter(fileNameGenerator(counterCars)));
-            out.write(Integer.toString(counterCars));
+            out = new BufferedWriter(new FileWriter(fileNameGenerator(counterChars)));
+            out.write(Integer.toString(counterChars));
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
