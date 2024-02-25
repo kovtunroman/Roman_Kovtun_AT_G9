@@ -1,0 +1,55 @@
+package homework.day8.collections;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Birds {
+    public static void main(String[] args) {
+        List<String> birds = Arrays.asList("Seagull", "Thrush", "Busel", "Dove", "Sparrow", "Heron");
+
+        printBird(birds);
+        calculateNumberOfBirdsWithMoreThanOneVowel(birds);
+        birds = replaceBird(birds);
+        printBirdThroughSpace(birds);
+    }
+
+    private static void printBird(List<String> inputBirds) {
+        for (String butterflie : inputBirds) {
+            System.out.printf("--%s--", butterflie).println();
+        }
+    }
+
+    private static int calculateNumberOfVowels(String word) {
+        Pattern pattern = Pattern.compile("[aeiouAEIOU]", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(word);
+        int counter = 0;
+        while (matcher.find()) {
+            counter++;
+        }
+        return counter;
+    }
+
+    private static void calculateNumberOfBirdsWithMoreThanOneVowel(List<String> inputBirds) {
+        int counter = 0;
+        for (String bird : inputBirds) {
+            if (calculateNumberOfVowels(bird) > 1) {
+                counter++;
+            }
+        }
+        System.out.printf("Number of birds with more then one vowel is %s", counter).println();
+    }
+
+    private static List<String> replaceBird(List<String> inputBirds) {
+        inputBirds.set(3, "Tit");
+        return inputBirds;
+    }
+
+    private static void printBirdThroughSpace(List<String> inputBirds) {
+        for (String butterflie : inputBirds) {
+            System.out.printf("%s ", butterflie);
+        }
+        System.out.println();
+    }
+}
