@@ -1,5 +1,7 @@
 package homework.day8.collections;
 
+import homework.day8.util.Printer;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -15,20 +17,13 @@ public class Elements {
         elements.add("Picker");
         elements.add("Breadcrumb");
 
-        printElementsThroughSpace(elements);
+        Printer.printListThroughSpaceForEach(elements);
         calculateNumberOfElementsWithMoreThanOneWord(elements);
-        printElementsThroughSpaceIterateByIndex(elements);
+        Printer.printListThroughSpaceIterateByIndex(elements);
         elements.add(4, "Spinner");
         elements.remove(2);
         elements.set(5, "Switch");
-        printElementsThroughSpace(elements);
-    }
-
-    private static void printElementsThroughSpace(List<String> inputElements) {
-        for (String element : inputElements) {
-            System.out.printf("%s ", element);
-        }
-        System.out.println();
+        Printer.printListThroughSpaceForEach(elements);
     }
 
     private static int calculateNumberOfWords(String word) {
@@ -49,16 +44,5 @@ public class Elements {
             }
         }
         System.out.printf("Number of elements with more then one word is %s", counter).println();
-    }
-
-    private static void printElementsThroughSpaceIterateByIndex(List<String> inputElements) {
-        for (int i = 0; i < inputElements.size(); i++) {
-            if (i == inputElements.size() - 1) {
-                System.out.print(inputElements.get(i));
-            } else {
-                System.out.print(inputElements.get(i) + " ");
-            }
-        }
-        System.out.println();
     }
 }

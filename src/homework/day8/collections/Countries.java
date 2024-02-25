@@ -1,7 +1,8 @@
 package homework.day8.collections;
 
+import homework.day8.util.Printer;
+
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Countries {
@@ -13,20 +14,9 @@ public class Countries {
         countries.add("Zambia");
         countries.add("United Kingdom of Great Britain");
 
-        printCountries(countries);
+        Printer.printListThroughCommaForEach(countries);
         System.out.println(calculateNumberOfCountriesContainsLessThenSevenChars(countries));
-        printCountriesThroughNewLineIterateByIndex(countries);
-    }
-
-    private static void printCountries(List<String> inputCountries) {
-        for (String country : inputCountries) {
-            if (inputCountries.indexOf(country) == inputCountries.size() - 1) {
-                System.out.print(country);
-            } else {
-                System.out.print(country + ", ");
-            }
-        }
-        System.out.println();
+        Printer.printListThroughNewLineIterateByIndex(countries);
     }
 
     private static int calculateNumberOfCountriesContainsLessThenSevenChars(List<String> inputCountries) {
@@ -37,12 +27,5 @@ public class Countries {
             }
         }
         return counter;
-    }
-
-    private static void printCountriesThroughNewLineIterateByIndex(List<String> inputCountries) {
-        for (int i = 0; i < inputCountries.size(); i++) {
-            System.out.println(inputCountries.get(i));
-        }
-        System.out.println();
     }
 }

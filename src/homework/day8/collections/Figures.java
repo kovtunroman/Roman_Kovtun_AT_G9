@@ -1,5 +1,7 @@
 package homework.day8.collections;
 
+import homework.day8.util.Printer;
+
 import java.util.*;
 
 public class Figures {
@@ -7,9 +9,9 @@ public class Figures {
         List<String> figures = Arrays.asList("Oval", "Rectangle", "Circle", "Square", "Ellipse");
         printFiguresThroughDash(figures);
         calculateAndPrintNumberOfFiguresWithoutN(figures);
-        printFiguresThroughSpaceIterateByIndex(figures);
+        Printer.printListThroughSpaceIterateByIndex(figures);
         figures = insertTriangle(figures);
-        printFiguresThroughSpace(figures);
+        Printer.printListThroughSpaceForEach(figures);
     }
 
     private static void printFiguresThroughDash(List<String> inputFigures) {
@@ -33,29 +35,8 @@ public class Figures {
         System.out.printf("Number of figures without \"i\" char is %s", counter).println();
     }
 
-    private static void printFiguresThroughSpaceIterateByIndex(List<String> inputFigures) {
-        for (int i = 0; i < inputFigures.size(); i++) {
-            if (i == inputFigures.size() - 1) {
-                System.out.print(inputFigures.get(i));
-            } else {
-                System.out.print(inputFigures.get(i) + " ");
-            }
-        }
-        System.out.println();
-    }
-
     private static List<String> insertTriangle(List<String> inputFigures) {
         inputFigures.set(3, "Triangle");
         return inputFigures;
-    }
-
-    private static void printFiguresThroughSpace(List<String> inputFigures) {
-        for (String figure : inputFigures) {
-            if (inputFigures.indexOf(figure) == inputFigures.size() - 1) {
-                System.out.print(figure);
-            } else {
-                System.out.print(figure + " ");
-            }
-        }
     }
 }

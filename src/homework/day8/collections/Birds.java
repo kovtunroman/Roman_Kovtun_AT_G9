@@ -1,5 +1,7 @@
 package homework.day8.collections;
 
+import homework.day8.util.Printer;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -11,8 +13,8 @@ public class Birds {
 
         printBird(birds);
         calculateNumberOfBirdsWithMoreThanOneVowel(birds);
-        birds = replaceBird(birds);
-        printBirdThroughSpace(birds);
+        birds.set(3, "Tit");
+        Printer.printListThroughSpaceForEach(birds);
     }
 
     private static void printBird(List<String> inputBirds) {
@@ -39,17 +41,5 @@ public class Birds {
             }
         }
         System.out.printf("Number of birds with more then one vowel is %s", counter).println();
-    }
-
-    private static List<String> replaceBird(List<String> inputBirds) {
-        inputBirds.set(3, "Tit");
-        return inputBirds;
-    }
-
-    private static void printBirdThroughSpace(List<String> inputBirds) {
-        for (String bird : inputBirds) {
-            System.out.printf("%s ", bird);
-        }
-        System.out.println();
     }
 }
