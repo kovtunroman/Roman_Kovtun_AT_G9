@@ -2,6 +2,7 @@ package homework.day8.collections;
 
 import homework.day8.objects.Person;
 import homework.day8.objects.Sand;
+import homework.day8.util.Printer;
 import homework.day8.util.PrinterSymbol;
 
 import java.util.ArrayList;
@@ -24,9 +25,9 @@ public class SandCollectionTraining {
         for (int i = 0; i < sandbox.size(); i++) {
             sandMap.put(i, sandbox.get(i));
         }
-        printSandsMapKeys(sandMap);
-        printSandsMapValues(sandMap);
-        printSandsMapKeyValuePairs(sandMap);
+        Printer.printMapKeysThrough(sandMap);
+        Printer.printMapValuesThrough(sandMap);
+        Printer.printMapKeyValuePairsThrough(sandMap);
     }
 
     public static <T> void printSandsWeightForEachThrough(List<T> inputList, PrinterSymbol printerSymbol) {
@@ -55,27 +56,6 @@ public class SandCollectionTraining {
                     System.out.print(((Sand) element).getName() + printerSymbol.getValue());
                 }
             }
-        }
-        System.out.println();
-    }
-
-    public static void printSandsMapKeys(Map<Integer, Sand> inputSandsMap) {
-        for (int key : inputSandsMap.keySet()) {
-            System.out.println(key);
-        }
-        System.out.println();
-    }
-
-    public static void printSandsMapValues(Map<Integer, Sand> inputSandsMap) {
-        for (Sand sand : inputSandsMap.values()) {
-            System.out.println(sand);
-        }
-        System.out.println();
-    }
-
-    public static void printSandsMapKeyValuePairs(Map<Integer, Sand> inputSandsMap) {
-        for (int i = 0; i < inputSandsMap.size(); i++) {
-            System.out.println("Key {" + inputSandsMap.keySet().toArray()[i] + "} : Value {" + inputSandsMap.values().toArray()[i] + "}");
         }
         System.out.println();
     }
