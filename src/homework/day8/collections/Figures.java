@@ -37,7 +37,7 @@ public class Figures {
     }
 
     private static List<String> insertTriangle(List<String> inputFigures) {
-        inputFigures.set(3, "Triangle");
+        inputFigures.set(2, "Triangle");
         return inputFigures;
     }
 }
