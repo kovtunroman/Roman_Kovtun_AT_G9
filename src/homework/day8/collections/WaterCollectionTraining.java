@@ -19,7 +19,7 @@ public class WaterCollectionTraining {
 
     public static <T> void printWaterForEachThrough(List<T> inputList, PrinterSymbol printerSymbol) {
         for (T element : inputList) {
-            System.out.println(((Water) element).getColor() + printerSymbol.getValue() + ((Water) element).getSmell());
+            System.out.println(((Water) element).getColor() + printerSymbol.getValue() + ((Water) element).getClass().getSimpleName());
         }
         System.out.println();
     }
