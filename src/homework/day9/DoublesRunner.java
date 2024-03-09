@@ -1,11 +1,8 @@
 package homework.day9;
 
-import homework.day8.collections.Doubles;
 import homework.day8.objects.Bubble;
 
-import java.util.Arrays;
 import java.util.Random;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -18,7 +15,7 @@ public class DoublesRunner {
                 .mapToInt(d -> random.nextInt(0, (int) Math.round(d) + 1))
                 .distinct()
                 .mapToObj(i -> IntStream.range(0, i)
-                        .mapToObj(Bubble::new)
+                        .mapToObj(_ -> new Bubble(i))
                         .collect(Collectors.toList()))
                 .peek(s -> s.stream().peek(System.out::println)
                         .collect(Collectors.toList()))
