@@ -11,6 +11,11 @@ public class Bubble {
         this.name = name;
     }
 
+    public Bubble(int i){
+        this.volume = i;
+        this.name = "Bubble vol- " + i;
+    }
+
     public int getVolume() {
         return volume;
     }

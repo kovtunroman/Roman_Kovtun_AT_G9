@@ -5,10 +5,16 @@ import java.util.Objects;
 public class Person {
     private int age;
     private String name;
+    private Sex sex;
 
-    public Person(int age, String name) {
+    public Person(String name, int age, Sex sex) {
         this.age = age;
         this.name = name;
+        this.sex = sex;
+    }
+
+    public Person(int age, String name){
+        this(name, age, Sex.MAN);
     }
 
     public int getAge() {
@@ -25,6 +31,14 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Sex getSex() {
+        return sex;
+    }
+
+    public void setSex(Sex sex) {
+        this.sex = sex;
     }
 
     @Override
@@ -46,5 +60,9 @@ public class Person {
                 "age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public enum Sex{
+        MAN, WOMEN
     }
 }
