@@ -11,7 +11,7 @@ public class Mouse {
     }
 
     public void peep() {
-        System.out.println(name + "PEEP!");
+        System.out.println(name + " PEEP!");
         try {
             TimeUnit.MILLISECONDS.sleep(200);
         } catch (InterruptedException e) {

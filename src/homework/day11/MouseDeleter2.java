@@ -2,11 +2,12 @@ package homework.day11;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
-public class MouseDeleter1 {
+public class MouseDeleter2 {
     public static void main(String[] args) {
         List<Mouse> mouseList = new ArrayList<>(20);
-        for (int i = 1; i < 281; i++) {
+        for (int i = 1; i < 381; i++) {
             mouseList.add(new Mouse(i));
         }
         Object lock = new Object();
@@ -20,6 +21,11 @@ public class MouseDeleter1 {
                             System.out.printf("t%s  removes ", finalI);
                             Mouse mouse = mouseList.remove(0);
                             mouse.peep();
+                            try {
+                                TimeUnit.MILLISECONDS.sleep(250);
+                            } catch (InterruptedException e) {
+                                throw new RuntimeException(e);
+                            }
                         }
                     }
                 }
