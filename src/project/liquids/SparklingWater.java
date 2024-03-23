@@ -1,12 +1,14 @@
 package project.liquids;
 
+import java.util.concurrent.TimeUnit;
+
 public class SparklingWater extends Water {
     private Bubble[] bubbles;
-    private boolean isOpened;
+    private boolean isOpened = false;
 
     public SparklingWater(String color, String smell, String transperency, int temperature) {
         super(color, smell, transperency, temperature);
-        isOpened();
+        new Thread(() -> this.isOpened()).start();
     }
 
     public void showNumberOfBubbles() {
@@ -49,12 +51,21 @@ public class SparklingWater extends Water {
     }
 
     private void isOpened() {
-        System.out.println("Water is opened");
+        while(!isOpened){
+            try {
+                TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        if (isOpened) {
+            System.out.println("Water is opened");
+            degas();
+        }
     }
 
     public void setOpened() {
         isOpened = true;
-        degas();
         System.out.println("Sparkling Water was set to opened");
     }
 }
